@@ -87,10 +87,10 @@ From the user query, you can invoke the below tools as per requirement.
 
 FINAL OUTPUT FORMAT:
 
-=== CAPTIONS ===
+CAPTION
 <captions>
 
-=== BLOG ===
+BLOG
 <blog content>
 
 Rules:

@@ -16,7 +16,7 @@ def generate_blog(topic):
     return response.json()["output"]
 
 with gr.Blocks(title="AI Blog Generator") as demo:
-    gr.Markdown("## ✍️ AI Blog Generator (Agentic AI)")
+    gr.Markdown("## ✍️ AI Blog Generator")
 
     topic = gr.Textbox(
         label="Blog Topic",
