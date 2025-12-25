@@ -104,9 +104,11 @@ Rules:
 # =========================
 # Run the System
 # =========================
-
 if __name__ == "__main__":
-    query = "Global Warming"
+    query = input("Enter blog topic: ").strip()
+
+    if not query:
+        raise ValueError("Query cannot be empty")
 
     response = supervisor_agent.invoke({
         "messages": [
@@ -114,4 +116,6 @@ if __name__ == "__main__":
         ]
     })
 
+    print("\n" + "="*50 + "\n")
     print(response["messages"][-1].content)
+
